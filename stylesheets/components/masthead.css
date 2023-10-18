@@ -1,1 +1,56 @@
 /* Your code here */
+.masthead{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30% 50% auto;
+    grid-template-areas:
+    "m . a"
+    ". t ."
+    "d l p";
+}
+
+.mh-menu{
+    grid-area:m ;
+    display: flex;
+    justify-content: left;
+    border: solid red;
+}
+
+.mh-action{
+    grid-area:a ;
+    display: flex;
+    /* align-items:  right; */
+    justify-content: right;
+    /* align-content:flex-end; */
+    border: solid black;
+}
+
+.mh-technologies{
+    grid-area:t ;
+    display: flex;
+    justify-content: center;
+    border: solid purple;
+}
+
+.mh-date{
+    grid-area:d ;
+    display: flex;
+    justify-content: left;
+    border: solid red;
+}
+
+.mh-logo{
+    grid-area:l ;
+    display: flex;
+    justify-content: center;
+    border: solid blue;
+}
+
+.mh-paper{
+    grid-area:p ;
+    display: flex;
+    /* align-items: right; */
+    justify-content: right;
+    border: solid black;
+
+}
