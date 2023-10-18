@@ -11,9 +11,13 @@
 
 .mh-menu{
     grid-area:m ;
-    display: flex;
+    display: grid;
     justify-content: left;
     border: solid red;
+    grid-template-columns: 5% 5% 5%;
+    grid-template-areas:
+    "menu-icon . search-icon";
+    background-color: yellow;
 }
 
 .mh-action{
@@ -23,6 +27,7 @@
     justify-content: right;
     /* align-content:flex-end; */
     border: solid black;
+    background-color: yellow;
 }
 
 .mh-technologies{
@@ -52,5 +57,14 @@
     /* align-items: right; */
     justify-content: right;
     border: solid black;
+}
 
+.mh-menu > .menu{
+    grid-area: menu-icon;
+    font-size: 11px;
+    horizontal-padding: 9px /* 9 pixel left and right */
+}
+
+.mh-menu > .search{
+    grid-area: search-icon;
 }
